@@ -1,0 +1,114 @@
+	@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{
+	height: 900px;
+	background-color: rgb(23, 23, 23);
+	font-family: "Righteous";
+	color: white;
+}
+
+header{
+	background: url("https://wallpapercave.com/wp/wp10722924.jpg");
+    text-align: center;
+	width: 100%;
+	height: 35%;
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: 40%;
+	position: sticky;
+	top: -15em;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30% 30%;
+}
+
+#contentHeader{
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(5px);
+}
+
+#headerTitle{
+	font-size: 5em;
+	padding-top: 0.6em;
+	padding-bottom: 0.3em;
+}
+
+#headerSubtitle{
+	font-size: 2em;
+	padding-bottom: 1.7em;
+}
+
+.button{
+	text-decoration: none;
+	padding: 1em;
+    border: 0.25em solid white;
+	color: white;
+}
+
+#contentMain{
+	margin-top: 1em;
+	display: inline-block;
+	height: 100%;
+	width: 74.85%;
+	background: rgb(0, 0, 45);
+	border-radius: 1em;
+	padding: 1%;
+}
+
+.article{
+	width: 100%;
+	height: 100%;
+	padding: 1em;
+	background: rgb(37, 37, 160);
+	margin: 1em, 1em, 1em, 0;
+}
+
+#video{
+	padding: 1em;
+}
+
+#videoIframe{
+	width: 640px;
+	height: 480px; 
+}
+
+#sidebar{
+	display: inline-block;
+	height: 100%;
+	width: 24.85%;
+	background: rgb(0, 0, 45);
+	padding: 1%;
+	border-radius: 1em;
+	margin-top: 1em;
+}
+
+#aclaration{
+	font-size: 0.75em;
+	vertical-align: sub;
+}
+
+#footer{
+	position: static;
+	text-align: center;
+	display: block;
+	height: 5em;
+	width: 100%;
+	padding: 2em;
+	border-radius: 1em;
+	background: rgb(0, 0, 45);
+	margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+	h1{color: red;}
+	header{height: 22%; top:-8em;}
+	#headerTitle{font-size: 3em;}
+	#headerSubtitle{font-size: 1em;}
+	.estiloresponsive{float:right; padding-left: 15px;}
+	#contentMain{width: 100%;}
+	#sidebar{width: 100%;}
+	#videoIframe{width: 320px; height: 240px;}
+	.button{border: 0.2em solid white; font-size: 0.7em;}
+}
